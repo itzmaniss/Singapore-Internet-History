@@ -1,0 +1,118 @@
+{
+    "title": "Internet Penetration in Singapore (2000-2024)",
+    "subtitle": "Percentage of population using the internet",
+    "description": "Household and individual internet usage rates in Singapore from 2000 to 2024, showing the digital transformation from early adoption to near-universal coverage.",
+    "unit": "percentage",
+    "sources": [
+        {
+            "name": "Data.gov.sg - Individuals Internet Usage By Age Group, Annual",
+            "url": "https://data.gov.sg/datasets/d_3f4bfee2d42f8fb3bea3218c01aa9902/view"
+        },
+        {
+            "name": "Data.gov.sg - Individual Internet Usage",
+            "url": "https://data.gov.sg/datasets/d_fcc02bc884c54a09e8665443bff2f4c2/view"
+        }
+    ],
+    "data": [
+        {
+            "year": 2000,
+            "percentage": 36.0
+        },
+        {
+            "year": 2001,
+            "percentage": 43.0
+        },
+        {
+            "year": 2002,
+            "percentage": 47.0
+        },
+        {
+            "year": 2003,
+            "percentage": 53.0
+        },
+        {
+            "year": 2004,
+            "percentage": 62.0
+        },
+        {
+            "year": 2005,
+            "percentage": 61.0
+        },
+        {
+            "year": 2006,
+            "percentage": 59.0
+        },
+        {
+            "year": 2007,
+            "percentage": 68.0
+        },
+        {
+            "year": 2008,
+            "percentage": 69.0
+        },
+        {
+            "year": 2009,
+            "percentage": 69.0
+        },
+        {
+            "year": 2010,
+            "percentage": 71.0
+        },
+        {
+            "year": 2011,
+            "percentage": 71.0
+        },
+        {
+            "year": 2012,
+            "percentage": 72.0
+        },
+        {
+            "year": 2013,
+            "percentage": 79.0
+        },
+        {
+            "year": 2014,
+            "percentage": 80.0
+        },
+        {
+            "year": 2015,
+            "percentage": 79.0
+        },
+        {
+            "year": 2016,
+            "percentage": 79.0
+        },
+        {
+            "year": 2017,
+            "percentage": 82.57
+        },
+        {
+            "year": 2018,
+            "percentage": 86.47
+        },
+        {
+            "year": 2019,
+            "percentage": 88.3
+        },
+        {
+            "year": 2020,
+            "percentage": 91.96
+        },
+        {
+            "year": 2021,
+            "percentage": 93.89
+        },
+        {
+            "year": 2022,
+            "percentage": 92.82
+        },
+        {
+            "year": 2023,
+            "percentage": 91.25
+        },
+        {
+            "year": 2024,
+            "percentage": 91.06
+        }
+    ]
+}

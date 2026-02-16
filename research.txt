@@ -1,0 +1,24 @@
+For this project, I will be exploring the history of the internet in Singapore, since its humble beginnings in 1991 till date, a range exploring not just my entire life, but also one of the most remarkable digital transformations.
+Singapore’s journey started off in 1991, when National University Of Singapore (NUS) set up Technet with financial backing from the National Science and Technology Board (NSTB) [1]. Although, at that point, the internet access was limited to only use for Research and Development [1]. This foundation set the stage for Singapore's transition to the commercial internet services 3 years later.
+My research focuses on 3 distinct eras in Singapore’s digital evolution. Firstly, the Foundation Era (1991-2004), covers the transition from academic networks to commercial internet, beginning with the launch of SingNet in 1994, soon to be followed by rival ISPs launching, Pacific Internet in 1995 and Cyberway in 1996 [2]. This era also witnessed the transition from slow dial-up internet to faster, Asymmetric Digital Subscriber Line broadband [2], driven by IT2000, Singapore’s masterplan to “develop into an intelligent island that will be one of the first countries in the world with an advanced nationwide information infrastructure interconnecting computers in nearly every home, school, and workplace” [3].
+Secondly, we move on to the Wireless Era (2005 - 2013) where Singapore shifted to mobile internet access. The government-led Wireless@SG programme, officially launched in 2006, deployed free wireless hotspots across 7,500 locations by 2008, and over 44,000 locations today [4]. At the same time, the release of 3G in 2005 and 4G in 2012[2], and the boost from the release of Apple iPhone in 2007, fundamentally changed how Singapore and its citizens used the internet.
+Last but not least the Smart Nation(2013 - Present) era. This era focuses on the maturation of Singapore into one of the world’s most digitally connected nations. The Next Generation Nationwide Broadband Network (NGNBN), 95% completed in 2013 ahead of its 2015 deadline, brought high-speed fibre internet connection to every residential and non residential premises[5]. By 2024, the Singapore government also announced an extra S$100 million to upgrade this network to support 10Gbps speeds! On top of that Singapore also became the first in the world to be fully covered by a 5G standalone network. Which offers even faster mobile speeds for everyone. [6]
+
+
+References
+[1] Tan, J., and Wong, S. “The Internet as a Learning Tool: Planning Perspectives (the Singapore Experience).” Internet Society, 12 Mar. 2000.
+[2] “History of Internet in Singapore: From Academic Link to 5G Digital Future.” GovTech Singapore, 12 Aug. 2021.
+[3] Choo, Chun Wei. "IT2000: Singapore’s Vision of an Intelligent Island." Intelligent Environments, edited by Peter Droege, North-Holland, 1997, pp. 49-65.
+[4] Sanjeevan, K. “Networking Wireless@SG.” APNIC Blog, 7 Sept. 2022,
+[5] “Next Generation Nationwide Broadband Network.” Infocomm Media Development Authority (IMDA), 12 Feb. 2025,
+[6]“Singapore 5G.” International Trade Administration, U.S. Department of Commerce, 8 Dec. 2022,
+
+
+
+API RESOURCES FOR DATA:
+
+https://data.gov.sg/datasets?query=Internet+Usage&resultId=d_fcc02bc884c54a09e8665443bff2f4c2
+
+https://data.worldbank.org/indicator/IT.NET.USER.ZS
+
+https://data360.worldbank.org/en/indicator/WB_WDI_IT_NET_USER_ZS

@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/css/styles.css --watch",
+    "dev": "npm run dev:css & npm run server"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
