@@ -1,6 +1,9 @@
 {
     "title": "Internet Usage by Country (1990-2024)",
-    "source": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+    "source": {
+        "name": "World Bank - Internet Users",
+        "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS"
+    },
     "years": [
         1990,
         1991,

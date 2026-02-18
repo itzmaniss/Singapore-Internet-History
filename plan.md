@@ -38,7 +38,7 @@ WebDev_Finals/
 │
 ├── public/
 │   ├── css/
-│   │   └── output.css          (compiled Tailwind — gitignored)
+│   │   └── output.css          (compiled Tailwind)
 │   ├── js/
 │   │   └── main.js
 │   └── images/
