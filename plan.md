@@ -24,6 +24,7 @@ WebDev_Finals/
 │
 ├── routes/
 │   └── index.js
+│   └── api.js
 │
 ├── views/
 │   ├── layout.pug
@@ -48,9 +49,9 @@ WebDev_Finals/
 │   └── input.css               (Tailwind source)
 │
 └── data/
-    ├── sg-internet-usage.json
-    ├── sg-world-bank-internet.json
-    └── world-internet-users.json
+│   ├── sg-internet-usage.json
+│   ├── sg-world-bank-internet.json
+│   └── world-internet-users.json
 ```
 
 ---
