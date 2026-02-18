@@ -6,145 +6,163 @@ History of the Internet in Singapore (1991–Present)
 
 ## Tech Stack
 
-- Express 5 + Pug (server-side rendering)
+- Next.js + React (App Router, server-side rendering)
 - Tailwind CSS 4 (styling)
 - Chart.js (data visualizations)
+- AJV (JSON schema validation)
 - data.gov.sg + World Bank APIs (data sources)
 
 ---
 
 ## File Structure
 
-```zsh
-WebDev_Finals/
-├── server.js
-├── package.json
-├── .env
-├── .gitignore
+```
+Singapore-Internet-History/
+├── app/
+│   ├── layout.jsx                  # Root layout (nav + footer)
+│   ├── page.jsx                    # Homepage
+│   ├── globals.css                 # Tailwind styles
+│   ├── [era]/
+│   │   └── page.jsx                # Dynamic era page template
+│   └── api/
+│       └── internet-usage/
+│           ├── singapore/
+│           │   └── route.js        # GET /api/internet-usage/singapore
+│           └── global/
+│               └── route.js        # GET /api/internet-usage/global
 │
-├── routes/
-│   └── index.js
+├── components/
+│   ├── Navbar.jsx                  # Navigation bar
+│   └── Footer.jsx                  # Footer with citations
 │
-├── views/
-│   ├── layout.pug
-│   ├── index.pug
-│   ├── partials/
-│   │   ├── navbar.pug
-│   │   └── footer.pug
-│   └── eras/
-│       ├── foundation.pug
-│       ├── wireless.pug
-│       └── smart-nation.pug
+├── utils/
+│   ├── index.js                    # Barrel export for validators
+│   ├── internetUsageGlobal.js      # AJV schema + validator (global)
+│   ├── internetUsageSingapore.js   # AJV schema + validator (singapore)
+│   └── eraContent.js              # AJV schema + validator (era pages)
+│
+├── data/
+│   ├── internet_usage_in_sg.json
+│   ├── internet_usage_by_country.json
+│   ├── eras/
+│   │   ├── foundation.json         # Foundation Era content
+│   │   ├── wireless.json           # Wireless Era content
+│   │   └── smart-nation.json       # Smart Nation Era content
+│   ├── SGData/
+│   │   ├── convert.py
+│   │   ├── IndividualInternetUsage.csv
+│   │   ├── IndividualsInternetUsageByAgeGroupAnnual.csv
+│   │   ├── internet_usage_in_sg.json
+│   │   └── sg_data_analytics.ipynb
+│   └── WorldData/
+│       ├── API_IT.NET.USER.ZS_DS2_en_csv_v2_1228.csv
+│       ├── Metadata_Country_API_IT.NET.USER.ZS_DS2_en_csv_v2_1228.csv
+│       ├── Metadata_Indicator_API_IT.NET.USER.ZS_DS2_en_csv_v2_1228.csv
+│       └── world_data_analytics.ipynb
 │
 ├── public/
-│   ├── css/
-│   │   └── output.css          (compiled Tailwind)
-│   ├── js/
-│   │   └── main.js
 │   └── images/
-│       └── night_skylines.jpg
+│       └── mbs_night.jpg
 │
-├── src/
-│   └── input.css               (Tailwind source)
-│
-└── data/
-    ├── sg-internet-usage.json
-    ├── sg-world-bank-internet.json
-    └── world-internet-users.json
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+└── plan.md
 ```
 
 ---
 
 ## What Goes Where
 
-### server.js — App entry point
-
-- Load dotenv, configure Express
-- Set Pug as view engine, point to views/
-- Serve public/ as static files
-- Mount routes from routes/index.js
-- Start listening on a port
-
-### routes/index.js — Route definitions
-
-- GET /              → render index.pug (homepage)
-- GET /foundation    → render eras/foundation.pug
-- GET /wireless      → render eras/wireless.pug
-- GET /smart-nation  → render eras/smart-nation.pug
-- GET /api/sg-data   → read & return data/sg-internet-usage.json
-- GET /api/world-data → read & return data/world-internet-users.json
-
-### views/layout.pug — Base template
+### app/layout.jsx — Root Layout
 
 - HTML boilerplate (head, body)
-- Link to /css/output.css
-- Include partials/navbar
-- Block content (child pages fill this)
-- Include partials/footer
-- Script tag for /js/main.js
+- Import globals.css (Tailwind)
+- Include Navbar and Footer components
+- {children} slot for page content
 
-### views/partials/navbar.pug
+### app/page.jsx — Homepage
 
-- Navigation links: Home, Foundation Era, Wireless Era, Smart Nation
-
-### views/partials/footer.pug
-
-- References/citations, copyright
-
-### views/index.pug — Homepage
-
-- Extends layout
-- Hero section with background image (night_skylines.jpg)
+- Hero section with background image (mbs_night.jpg)
 - Brief intro text
 - Cards/links to the 3 eras
 
-### views/eras/foundation.pug — Foundation Era (1991–2004)
+### app/[era]/page.jsx — Dynamic Era Page Template
 
-- Extends ../layout
-- Content: SingNet, dial-up → broadband, IT2000
-- Chart placeholder for data visualization
+- Reads `era` param from URL (foundation, wireless, smart-nation)
+- Loads corresponding JSON from data/eras/{era}.json
+- Validates with AJV (validateEraContent)
+- Renders shared template with era-specific data:
+  - Title, period, description
+  - Key milestones/events
+  - Chart component for data visualization
+  - Sources/references
+- Returns 404 if era slug is invalid
 
-### views/eras/wireless.pug — Wireless Era (2005–2013)
+### app/api/internet-usage/singapore/route.js — Singapore API
 
-- Extends ../layout
-- Content: Wireless@SG, 3G/4G, iPhone impact
-- Chart placeholder
+- Read data/internet_usage_in_sg.json
+- Validate with AJV (validateSingaporeInternetUsage)
+- Return JSON response or error
 
-### views/eras/smart-nation.pug — Smart Nation (2013–Present)
+### app/api/internet-usage/global/route.js — Global API
 
-- Extends ../layout
-- Content: NGNBN, 5G, 10Gbps upgrades
-- Chart placeholder
+- Read data/internet_usage_by_country.json
+- Validate with AJV (validateGlobalInternetUsage)
+- Return JSON response or error
 
-### public/js/main.js — Client-side JavaScript
+### components/Navbar.jsx — Navigation
 
-- Fetch data from /api/sg-data and /api/world-data
-- Render charts using Chart.js into placeholders
-- Interactive elements (scroll animations, timeline nav)
+- Navigation links: Home, Foundation Era, Wireless Era, Smart Nation
+- (replaces views/partials/nav.pug)
 
-### src/input.css — Tailwind source
+### components/Footer.jsx — Footer
 
-- @import "tailwindcss"
-- Custom @layer overrides if needed
+- References/citations, copyright
+- (replaces views/partials/footer.pug)
+
+### utils/ — AJV Validators
+
+- internetUsageSingapore.js — Schema + validator (reused from Express)
+- internetUsageGlobal.js — Schema + validator (reused from Express)
+- eraContent.js — Schema + validator for era page JSON data
+- index.js — Barrel export for all validators
 
 ### data/*.json — Static data files
 
-- Pre-fetched API responses served by Express routes
+- Pre-fetched API responses served by Next.js API routes
 
-### .env
+### data/eras/*.json — Era page content
 
-- api keys (if needed)
-
-### .gitignore
-
-- node_modules/, .env, .DS_Store
+- One JSON file per era with page content (title, period, description, milestones, etc.)
+- Validated by AJV before rendering in [era]/page.jsx
+- Shared schema ensures consistent structure across all eras
 
 ---
 
 ## Data Flow
 
 ```txt
-Browser  →  Express route  →  Pug template  →  HTML page
-Browser  →  fetch /api/*   →  Express reads data/*.json  →  JSON  →  Chart.js renders
-Tailwind:   src/input.css  →  CLI build  →  public/css/output.css
+Browser  →  Next.js page (server component)  →  React JSX  →  HTML page
+Browser  →  fetch /api/*  →  Next.js route handler reads data/*.json  →  AJV validates  →  JSON  →  Chart.js renders
+Tailwind:   globals.css  →  PostCSS/Tailwind  →  compiled styles
 ```
+
+---
+
+## Migration Checklist
+
+- [ ] Initialize Next.js project (npx create-next-app)
+- [ ] Move data/ and utils/ into new project (reuse as-is)
+- [ ] Move public/images/ into new public/
+- [ ] Set up Tailwind CSS
+- [ ] Create app/layout.jsx (from views layout + partials)
+- [ ] Create components/Navbar.jsx (from views/partials/nav.pug)
+- [ ] Create components/Footer.jsx (from views/partials/footer.pug)
+- [ ] Create app/page.jsx (from views/index.pug)
+- [ ] Create data/eras/*.json content files (foundation, wireless, smart-nation)
+- [ ] Create AJV schema for era content (utils/eraContent.js)
+- [ ] Create app/[era]/page.jsx dynamic template
+- [ ] Create API route handlers (from routes/api.js)
+- [ ] Wire up Chart.js for data visualizations
+- [ ] Remove old Express files (server.js, routes/, views/, src/)
