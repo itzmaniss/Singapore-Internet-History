@@ -1,0 +1,67 @@
+{
+    "title": "Foundation Era",
+    "period": "1991 – 2004",
+    "slug": "foundation",
+    "intro": "Singapore's digital journey began in 1991 when the National University of Singapore (NUS) set up Technet with financial backing from the National Science and Technology Board (NSTB). At that point, internet access was limited to research and development use only. This foundation set the stage for Singapore's transition to commercial internet services three years later.",
+    "milestones": [
+      {
+        "year": 1991,
+        "event": "NUS establishes Technet",
+        "detail": "National University of Singapore sets up Technet with NSTB funding, giving Singapore its first internet connection — restricted to academic and R&D use only.",
+        "source_ids": [1, 2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/NUS%2C_Central_Library_2%2C_Nov_06.JPG/1200px-NUS%2C_Central_Library_2%2C_Nov_06.JPG",
+        "image_alt": "NUS Central Library, Kent Ridge Campus",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 1994,
+        "event": "SingNet launches — commercial internet begins",
+        "detail": "Singapore Telecom launches SingNet, marking the start of commercial internet access for the public, alongside a dial-up email service.",
+        "source_ids": [1, 2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Modem_-_acoustic_coupler_2400bd_acoustic_modem.jpg/1200px-Modem_-_acoustic_coupler_2400bd_acoustic_modem.jpg",
+        "image_alt": "Vintage dial-up acoustic coupler modem",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 1995,
+        "event": "Pacific Internet launches",
+        "detail": "The former TechNet network is acquired and relaunched as Pacific Internet, Singapore's second ISP, increasing competition and consumer choice.",
+        "source_ids": [2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Modem_-_acoustic_coupler_2400bd_acoustic_modem.jpg/1200px-Modem_-_acoustic_coupler_2400bd_acoustic_modem.jpg",
+        "image_alt": "Vintage dial-up modem representing the era of early ISP competition",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 1996,
+        "event": "Cyberway launches & IT2000 masterplan",
+        "detail": "A third ISP, Cyberway, enters the market. That same year Singapore's IT2000 masterplan set out the vision to develop Singapore into an 'intelligent island' with an advanced nationwide information infrastructure interconnecting computers in nearly every home, school, and workplace.",
+        "source_ids": [2, 3],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Marina_Bay_Financial_Centre_Completed.JPG/1200px-Marina_Bay_Financial_Centre_Completed.JPG",
+        "image_alt": "Singapore skyline, symbolic of the IT2000 intelligent island vision",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 2000,
+        "event": "Broadband (ADSL) rollout begins",
+        "detail": "Singapore transitions from slow dial-up connections to Asymmetric Digital Subscriber Line (ADSL) broadband, dramatically improving speeds and reliability for homes and businesses.",
+        "source_ids": [2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/RJ-45_on_a_ADSL-Router.jpg/1200px-RJ-45_on_a_ADSL-Router.jpg",
+        "image_alt": "ADSL router with RJ-45 cable",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      }
+    ],
+    "sources": [
+      {
+        "id": 1,
+        "citation": "Tan, J., and Wong, S. \"The Internet as a Learning Tool: Planning Perspectives (the Singapore Experience).\" Internet Society, 12 Mar. 2000."
+      },
+      {
+        "id": 2,
+        "citation": "\"History of Internet in Singapore: From Academic Link to 5G Digital Future.\" GovTech Singapore, 12 Aug. 2021."
+      },
+      {
+        "id": 3,
+        "citation": "Choo, Chun Wei. \"IT2000: Singapore's Vision of an Intelligent Island.\" Intelligent Environments, edited by Peter Droege, North-Holland, 1997, pp. 49–65."
+      }
+    ]
+}

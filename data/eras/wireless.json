@@ -1,0 +1,55 @@
+{
+    "title": "Wireless Era",
+    "period": "2005 – 2013",
+    "slug": "wireless",
+    "intro": "The Wireless Era marked Singapore's decisive shift from fixed-line broadband to mobile internet access. Government-led infrastructure programmes combined with global hardware innovations — most notably Apple's iPhone — fundamentally transformed how Singaporeans connected to and used the internet.",
+    "milestones": [
+      {
+        "year": 2005,
+        "event": "3G mobile network launches",
+        "detail": "Third-generation (3G) mobile internet becomes available in Singapore, enabling mobile data access for the first time. By March 2006, there were already around 317,600 3G subscribers, representing 7% of the local population.",
+        "source_ids": [2, 4],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/3G_wireless_router.jpg/1200px-3G_wireless_router.jpg",
+        "image_alt": "3G wireless router",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 2006,
+        "event": "Wireless@SG programme officially launches",
+        "detail": "The government-led Wireless@SG programme, announced by Prime Minister Lee Hsien Loong in October 2006, begins operation on 1 December 2006 — a month ahead of schedule. It deploys free public Wi-Fi hotspots across 7,500 locations by 2008, and has since grown to over 44,000 locations island-wide.",
+        "source_ids": [4],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wireless_singapore.jpg/1200px-Wireless_singapore.jpg",
+        "image_alt": "Wireless@SG public Wi-Fi signage in Singapore",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 2007,
+        "event": "Apple iPhone released",
+        "detail": "The release of the original Apple iPhone catalysed a massive shift in how Singaporeans used the internet, driving explosive demand for mobile data and app-based services.",
+        "source_ids": [2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IPhone_1st_Gen.svg/800px-IPhone_1st_Gen.svg.png",
+        "image_alt": "Original Apple iPhone (1st generation)",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 2012,
+        "event": "4G LTE network launches",
+        "detail": "Fourth-generation (4G LTE) mobile internet rolls out in Singapore, delivering significantly faster mobile speeds and enabling richer mobile experiences for consumers and businesses alike.",
+        "source_ids": [2],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/4G_LTE_logo.svg/1200px-4G_LTE_logo.svg.png",
+        "image_alt": "4G LTE logo",
+        "image_credit": "Wikimedia Commons, CC0"
+      }
+    ],
+    "sources": [
+      {
+        "id": 2,
+        "citation": "\"History of Internet in Singapore: From Academic Link to 5G Digital Future.\" GovTech Singapore, 12 Aug. 2021."
+      },
+      {
+        "id": 4,
+        "citation": "Sanjeevan, K. \"Networking Wireless@SG.\" APNIC Blog, 7 Sept. 2022."
+      }
+    ]
+
+}

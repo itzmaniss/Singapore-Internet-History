@@ -1,24 +1,26 @@
 import Ajv from "ajv";
 
-const ajv = new Ajv();
+const ajv = new Ajv({ allErrors: true });
 
 const schema = {
     type: "object", 
     properties: {
-        title: {"type": "string"},
-        subtitle: {"type": "string"},
-        description: {"type": "string"},
-        unit: {"type": "string"},
-        sources: {"type": "array", 
+        title: {type: "string"},
+        subtitle: {type: "string"},
+        description: {type: "string"},
+        unit: {type: "string"},
+        sources: {type: "array", 
             items: {
                 type: "object",
                 properties: {
-                    name: {"type": "string"},
-                    url: {"type": "string"}
+                    name: {type: "string"},
+                    url: {type: "string"}
                 },
+                required: ["name", "url"],
+                additionalProperties: false
             }
         },
-        data: {"type" : "array", items: {
+        data: {type : "array", items: {
             type: "object",
             properties: {
                 year: {type: "integer"},

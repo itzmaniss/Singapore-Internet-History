@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="bg-navbar-bg py-10 border-t border-cyan-muted/20">
+    <footer className="bg-teal-medium py-10 border-t border-cyan-muted/20 min-w-full">
       <div className="container mx-auto px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           
@@ -9,28 +11,36 @@ export default function Footer() {
             <h3 className="text-cyan-bright font-bold mb-4 text-lg">Explore Eras</h3>
             <ul className="space-y-2 text-text-secondary">
               <li>
-                <a 
+                <Link 
+                  href="/"
+                  className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
+                >
+                  <span>→</span> Home
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/foundation" 
                   className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>→</span> Foundation Era (1991-2004)
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
+                <Link
                   href="/wireless" 
                   className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>→</span> Wireless Era (2005-2013)
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
+                <Link
                   href="/smart-nation" 
                   className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
                 >
                   <span>→</span> Smart Nation (2013-Present)
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -76,8 +86,8 @@ export default function Footer() {
           <div>
             <h3 className="text-cyan-bright font-bold mb-4 text-lg">About This Project</h3>
             <p className="text-text-secondary text-sm mb-4 leading-relaxed">
-              An interactive exploration of Singapore's remarkable digital transformation 
-              from its humble beginnings in 1991 to becoming one of the world's most 
+              An interactive exploration of Singapore&apos;s remarkable digital transformation 
+              from its humble beginnings in 1991 to becoming one of the world&apos;s most 
               connected Smart Nations.
             </p>
             <div className="text-xs text-text-secondary/80 space-y-1">

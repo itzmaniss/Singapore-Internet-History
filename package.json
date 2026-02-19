@@ -7,19 +7,23 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build:css": "tailwindcss -i ./app/globals.css -o ./public/css/styles.css"
+    "build:css": "tailwindcss -i ./app/globals.css -o ./public/css/styles.css",
+    "test": "jest"
   },
   "dependencies": {
     "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@jest/globals": "^30.2.0",
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "jest": "^30.2.0",
     "tailwindcss": "^4"
   }
 }

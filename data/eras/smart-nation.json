@@ -1,0 +1,45 @@
+{
+    "title": "Smart Nation Era",
+    "period": "2013 – Present",
+    "slug": "smart-nation",
+    "intro": "The Smart Nation era marks Singapore's maturation into one of the world's most digitally connected nations. World-class fibre broadband infrastructure, a nationwide 5G network, and continued government investment have positioned Singapore at the cutting edge of global connectivity.",
+    "milestones": [
+      {
+        "year": 2013,
+        "event": "NGNBN reaches 95% completion ahead of schedule",
+        "detail": "The Next Generation Nationwide Broadband Network (NGNBN) achieves 95% completion — two years ahead of its 2015 deadline — bringing high-speed fibre internet to every residential and non-residential premise in Singapore.",
+        "source_ids": [5],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fiber_optic_illuminated.jpg/1200px-Fiber_optic_illuminated.jpg",
+        "image_alt": "Illuminated fibre optic cables",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      },
+      {
+        "year": 2020,
+        "event": "Singapore becomes first nation with full 5G standalone coverage",
+        "detail": "Singapore becomes the first country in the world to achieve complete nationwide coverage by a 5G standalone network, offering faster mobile speeds and lower latency to all residents and businesses.",
+        "source_ids": [6],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/5G_Logo.svg/1200px-5G_Logo.svg.png",
+        "image_alt": "5G network logo",
+        "image_credit": "Wikimedia Commons, CC0"
+      },
+      {
+        "year": 2024,
+        "event": "S$100 million investment to upgrade network to 10Gbps",
+        "detail": "The Singapore government announces an additional S$100 million to upgrade the existing nationwide broadband network to support 10Gbps speeds, future-proofing the nation's digital infrastructure for the next generation.",
+        "source_ids": [5, 6],
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Singapore_Skyline_2019-05-27.jpg/1200px-Singapore_Skyline_2019-05-27.jpg",
+        "image_alt": "Singapore skyline, representing the Smart Nation vision",
+        "image_credit": "Wikimedia Commons, CC-BY-SA"
+      }
+    ],
+    "sources": [
+      {
+        "id": 5,
+        "citation": "\"Next Generation Nationwide Broadband Network.\" Infocomm Media Development Authority (IMDA), 12 Feb. 2025."
+      },
+      {
+        "id": 6,
+        "citation": "\"Singapore 5G.\" International Trade Administration, U.S. Department of Commerce, 8 Dec. 2022."
+      }
+    ]
+}
