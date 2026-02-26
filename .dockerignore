@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.gitignore
+.venv
+.env*
+.DS_Store
+coverage
+*.md
+kanban_log
+.swc
+.DS_Store
