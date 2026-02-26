@@ -25,7 +25,7 @@ const validateEraContent = ajv.compile({
                     event:        { type: "string", minLength: 1 },
                     detail:       { type: "string", minLength: 1 },
                     source_ids:   { type: "array", minItems: 1, uniqueItems: true, items: { type: "integer", minimum: 1 } },
-                    image_url:    { type: "string", format: "uri" },
+                    image_url:    { type: "string", format: "uri-reference" },
                     image_alt:    { type: "string", minLength: 1 },
                     image_credit: { type: "string", minLength: 1 },
                 },

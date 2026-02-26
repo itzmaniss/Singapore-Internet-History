@@ -19,7 +19,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
+                <Link
+                  href="/overview"
+                  className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
+                >
+                  <span>→</span> Overview
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/foundation" 
                   className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
                 >
@@ -31,7 +39,7 @@ export default function Footer() {
                   href="/wireless" 
                   className="hover:text-cyan-bright transition-colors duration-200 flex items-center gap-2"
                 >
-                  <span>→</span> Wireless Era (2005-2013)
+                  <span>→</span> Wireless Era (2004-2013)
                 </Link>
               </li>
               <li>

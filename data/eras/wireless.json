@@ -1,44 +1,44 @@
 {
     "title": "Wireless Era",
-    "period": "2005 – 2013",
+    "period": "2004 – 2013",
     "slug": "wireless",
-    "intro": "The Wireless Era marked Singapore's decisive shift from fixed-line broadband to mobile internet access. Government-led infrastructure programmes combined with global hardware innovations — most notably Apple's iPhone — fundamentally transformed how Singaporeans connected to and used the internet.",
+    "intro": "The Wireless Era marked Singapore's decisive shift from fixed-line broadband to mobile internet access. Government-led infrastructure programmes — most notably the Wireless@SG initiative — combined with global hardware innovations like Apple's iPhone to fundamentally transform how Singaporeans connected to and used the internet. During this period, mobile data subscriptions surged, smartphone penetration soared past 70%, and the expectation of being able to go online anywhere, at any time, became the norm rather than the exception. Singapore's compact geography and dense urban environment made it an ideal testbed for wireless technologies, and the country consistently ranked among the top nations globally for mobile connectivity throughout this era.",
     "milestones": [
       {
         "year": 2005,
         "event": "3G mobile network launches",
-        "detail": "Third-generation (3G) mobile internet becomes available in Singapore, enabling mobile data access for the first time. By March 2006, there were already around 317,600 3G subscribers, representing 7% of the local population.",
+        "detail": "Third-generation (3G) mobile internet became available in Singapore, enabling mobile data access for the first time on a meaningful scale. Unlike the limited WAP-based mobile internet of the late 1990s, 3G networks offered theoretical download speeds of up to 2 Mbps — fast enough to support web browsing, email, music streaming, and even low-resolution video on mobile handsets. By March 2006, there were already around 317,600 3G subscribers in Singapore, representing approximately 7% of the local population — a rapid uptake that signalled strong consumer appetite for mobile data services. The three incumbent mobile operators — SingTel, StarHub, and M1 — each rolled out competing 3G networks, investing heavily in base station infrastructure across the island. For the first time, Singaporeans could check their email on the MRT, browse the web from a café without needing Wi-Fi, or stream music during their commute. The 3G launch marked the beginning of a fundamental behavioural shift: the internet was no longer something you sat down at a desk to use — it was something you carried in your pocket.",
         "source_ids": [2, 4],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/3G_wireless_router.jpg/1200px-3G_wireless_router.jpg",
+        "image_url": "/images/eras/3g-router.webp",
         "image_alt": "3G wireless router",
-        "image_credit": "Wikimedia Commons, CC-BY-SA"
+        "image_credit": "Nan Palmero, CC BY 2.0, via Wikimedia Commons"
       },
       {
         "year": 2006,
         "event": "Wireless@SG programme officially launches",
-        "detail": "The government-led Wireless@SG programme, announced by Prime Minister Lee Hsien Loong in October 2006, begins operation on 1 December 2006 — a month ahead of schedule. It deploys free public Wi-Fi hotspots across 7,500 locations by 2008, and has since grown to over 44,000 locations island-wide.",
+        "detail": "The government-led Wireless@SG programme, publicly announced by Prime Minister Lee Hsien Loong in October 2006, began operation on 1 December 2006 — a full month ahead of schedule. The initiative deployed free public Wi-Fi hotspots across the island, starting with high-traffic locations such as shopping malls, libraries, community centres, food courts, and transport hubs. Three wireless operators — iCELL Network, QMax Communications, and SingTel — were appointed to build and manage the infrastructure in different zones of the island. By 2008, over 7,500 hotspot locations were live, and the network has since expanded to more than 44,000 locations island-wide. The programme was groundbreaking for its time: while other cities around the world were still debating the feasibility of municipal Wi-Fi, Singapore had already deployed a nationwide free wireless network accessible to all residents and visitors. Wireless@SG dramatically lowered the barrier to internet access in public spaces and played a key role in driving digital adoption among older Singaporeans and lower-income households who may not have had broadband at home. It also reinforced Singapore's reputation as a forward-thinking digital hub, attracting international attention and serving as a model for similar programmes in other countries.",
         "source_ids": [4],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wireless_singapore.jpg/1200px-Wireless_singapore.jpg",
+        "image_url": "/images/eras/wirelessSG.webp",
         "image_alt": "Wireless@SG public Wi-Fi signage in Singapore",
-        "image_credit": "Wikimedia Commons, CC-BY-SA"
+        "image_credit": "IMDA SG"
       },
       {
         "year": 2007,
         "event": "Apple iPhone released",
-        "detail": "The release of the original Apple iPhone catalysed a massive shift in how Singaporeans used the internet, driving explosive demand for mobile data and app-based services.",
+        "detail": "The release of the original Apple iPhone in June 2007 catalysed a seismic shift in how Singaporeans — and the world — interacted with the internet. While not the first smartphone, the iPhone's intuitive multitouch interface, full-featured Safari web browser, and sleek industrial design made mobile internet genuinely appealing to mainstream consumers for the first time. When it arrived in Singapore in 2008 through SingTel, demand was enormous, with long queues forming at retail outlets. The iPhone's real revolution, however, came with the launch of the App Store in 2008, which created an entirely new ecosystem of mobile applications — from social media and messaging to mobile banking and ride-hailing. This triggered an explosive surge in mobile data consumption across all three Singaporean telcos, forcing network upgrades and reshaping data plan pricing. Competing manufacturers rushed to release their own touchscreen smartphones running Google's Android operating system, rapidly expanding the smartphone market. Within just a few years, smartphones went from novelty gadgets to essential daily tools, and mobile internet usage in Singapore began to overtake desktop usage — a trend that would only accelerate in the years that followed.",
         "source_ids": [2],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IPhone_1st_Gen.svg/800px-IPhone_1st_Gen.svg.png",
+        "image_url": "/images/eras/iphone-1st-gen.webp",
         "image_alt": "Original Apple iPhone (1st generation)",
-        "image_credit": "Wikimedia Commons, CC-BY-SA"
+        "image_credit": "Avicente05, CC BY-SA 4.0, via Wikimedia Commons"
       },
       {
         "year": 2012,
         "event": "4G LTE network launches",
-        "detail": "Fourth-generation (4G LTE) mobile internet rolls out in Singapore, delivering significantly faster mobile speeds and enabling richer mobile experiences for consumers and businesses alike.",
+        "detail": "Fourth-generation Long-Term Evolution (4G LTE) mobile networks launched in Singapore in 2012, delivering a massive leap in mobile internet performance. With typical download speeds of 30–50 Mbps and theoretical peaks exceeding 150 Mbps, 4G LTE was roughly ten times faster than the 3G networks it succeeded — making it comparable to or even faster than many home broadband connections of the time. All three major operators — SingTel, StarHub, and M1 — rolled out 4G LTE networks in quick succession, competing aggressively on coverage and pricing. The speed and low latency of 4G enabled entirely new categories of mobile experiences: HD video streaming on services like YouTube and Netflix became smooth and reliable, video calling via apps like FaceTime and Skype became practical for everyday use, and cloud-based productivity tools allowed professionals to work effectively from anywhere on the island. The 4G rollout also fuelled the rise of Singapore's app-driven economy, supporting the growth of ride-hailing platforms like Grab, food delivery services, and mobile payment systems that would become ubiquitous in the following years. By the end of this era, Singapore's mobile internet infrastructure was among the fastest and most reliable in the world, setting the stage for the Smart Nation vision that would define the next chapter of the country's digital story.",
         "source_ids": [2],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/4G_LTE_logo.svg/1200px-4G_LTE_logo.svg.png",
-        "image_alt": "4G LTE logo",
-        "image_credit": "Wikimedia Commons, CC0"
+        "image_url": "/images/eras/4G-SG.webp",
+        "image_alt": "4G LTE launch in Singapore",
+        "image_credit": "tech4tea.com"
       }
     ],
     "sources": [

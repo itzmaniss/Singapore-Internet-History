@@ -32,7 +32,7 @@ export default function Home() {
                 </p>
                 
                 <div className="mt-6 md:mt-8">
-                    <Link href="/foundation">
+                    <Link href="/overview">
                         <button className={`${raleway.className} 
                             bg-white text-black 
                             text-lg sm:text-xl 

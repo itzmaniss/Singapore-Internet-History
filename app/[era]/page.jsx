@@ -27,8 +27,8 @@ export default async function EraPage({ params }) {
                     return (
                 <div key={index}>
                             <div className={`flex flex-col h-full md:flex-row ${isOdd ? 'md:flex-row-reverse bg-teal-dark' : 'bg-teal-deep'}`}>
-                                <div className="w-full md:w-1/2 relative">
-                                    <Image src={section.image_url} alt={section.image_alt} fill className="object-cover" />
+                                <div className="w-full h-64 md:h-auto md:w-1/2 relative">
+                                    <Image src={section.image_url} alt={section.image_alt} fill className="object-contain" />
                                     <span className="absolute bottom-2 right-2 text-xs text-white/70 bg-black/50 px-2 py-1 rounded">
                                         {section.image_credit}
                                     </span>

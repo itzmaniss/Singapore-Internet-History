@@ -2,34 +2,34 @@
     "title": "Smart Nation Era",
     "period": "2013 – Present",
     "slug": "smart-nation",
-    "intro": "The Smart Nation era marks Singapore's maturation into one of the world's most digitally connected nations. World-class fibre broadband infrastructure, a nationwide 5G network, and continued government investment have positioned Singapore at the cutting edge of global connectivity.",
+    "intro": "The Smart Nation era marks Singapore's maturation into one of the world's most digitally connected societies. Anchored by world-class fibre broadband infrastructure that reaches every premise on the island, a nationwide standalone 5G network, and sustained government investment in digital services and literacy, Singapore has consistently ranked among the top nations globally for internet speed, penetration, and digital readiness. This era is defined not just by faster connections, but by a fundamental shift in how connectivity underpins every aspect of national life — from government services and healthcare to transport, education, and the economy. The Smart Nation initiative, launched by Prime Minister Lee Hsien Loong in 2014, formalised this ambition: to harness technology and data to improve the lives of citizens, create opportunities for businesses, and build a more responsive and efficient government.",
     "milestones": [
       {
         "year": 2013,
         "event": "NGNBN reaches 95% completion ahead of schedule",
-        "detail": "The Next Generation Nationwide Broadband Network (NGNBN) achieves 95% completion — two years ahead of its 2015 deadline — bringing high-speed fibre internet to every residential and non-residential premise in Singapore.",
+        "detail": "The Next Generation Nationwide Broadband Network (NGNBN) achieved 95% residential coverage in 2013 — a full two years ahead of its original 2015 deadline — bringing ultra-high-speed fibre-optic internet to virtually every home, office, and school in Singapore. The NGNBN was a landmark public-private infrastructure project: OpenNet was appointed to build and operate the passive fibre infrastructure (the physical cables and connections), while Nucleus Connect served as the active network operator, and multiple retail ISPs competed to offer broadband plans to consumers over this shared infrastructure. This structural separation — splitting the network into wholesale and retail layers — was designed to maximise competition and keep prices low for consumers. Residential plans offering symmetrical speeds of up to 1 Gbps became available at prices as low as S$49 per month, making Singapore one of the most affordable places in the world for gigabit internet. The NGNBN fundamentally changed what Singaporeans could do online: 4K video streaming, large file uploads and downloads, cloud computing, and seamless video conferencing all became routine. The network also provided the essential backbone for the Smart Nation initiative that would be launched the following year, ensuring that every household in the country had the connectivity needed to participate in an increasingly digital economy and society.",
         "source_ids": [5],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fiber_optic_illuminated.jpg/1200px-Fiber_optic_illuminated.jpg",
+        "image_url": "/images/eras/fiber-optic-cables.webp",
         "image_alt": "Illuminated fibre optic cables",
-        "image_credit": "Wikimedia Commons, CC-BY-SA"
+        "image_credit": "Hustvedt, CC BY-SA 3.0, via Wikimedia Commons"
       },
       {
         "year": 2020,
-        "event": "Singapore becomes first nation with full 5G standalone coverage",
-        "detail": "Singapore becomes the first country in the world to achieve complete nationwide coverage by a 5G standalone network, offering faster mobile speeds and lower latency to all residents and businesses.",
+        "event": "Singapore achieves nationwide 5G standalone coverage",
+        "detail": "Singapore became one of the first countries in the world to achieve nationwide coverage by a 5G standalone (SA) network, a milestone that cemented its position at the forefront of global telecommunications. Unlike the non-standalone 5G deployments in many other countries — which rely on existing 4G infrastructure as a fallback — Singapore's 5G SA network operates on a dedicated core, delivering the full benefits of 5G technology: peak download speeds exceeding 1 Gbps, ultra-low latency as low as 1 millisecond, and the ability to connect a massive number of devices simultaneously. Two 5G licences were awarded by the Infocomm Media Development Authority (IMDA): one to Singtel and the other to a joint venture between StarHub and M1. Both operators invested heavily in deploying thousands of small cells and base stations across the island's dense urban landscape. Beyond faster smartphone downloads, 5G was designed to enable transformative use cases in industry and public services — autonomous vehicles, remote surgery, smart port operations, real-time environmental monitoring, and augmented reality experiences. The COVID-19 pandemic, which struck Singapore in early 2020, further underscored the critical importance of robust digital infrastructure, as millions of residents shifted to remote work, online learning, and telemedicine virtually overnight. Singapore's 5G network ensured the country was well-equipped to handle this unprecedented surge in demand.",
         "source_ids": [6],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/5G_Logo.svg/1200px-5G_Logo.svg.png",
-        "image_alt": "5G network logo",
-        "image_credit": "Wikimedia Commons, CC0"
+        "image_url": "/images/eras/5g-event.webp",
+        "image_alt": "5G network event",
+        "image_credit": "Palacio do Planalto, CC BY 2.0, via Wikimedia Commons"
       },
       {
         "year": 2024,
         "event": "S$100 million investment to upgrade network to 10Gbps",
-        "detail": "The Singapore government announces an additional S$100 million to upgrade the existing nationwide broadband network to support 10Gbps speeds, future-proofing the nation's digital infrastructure for the next generation.",
+        "detail": "In 2024, the Singapore government announced an additional investment of S$100 million to upgrade the existing nationwide broadband network to support speeds of up to 10 Gbps — ten times faster than the gigabit connections that were already among the fastest consumer internet offerings in the world. This investment, led by IMDA, is designed to future-proof Singapore's digital infrastructure for the next decade and beyond, ensuring the country can support the exponentially growing demands of artificial intelligence workloads, cloud computing, the Internet of Things (IoT), immersive extended reality (XR) applications, and high-frequency financial trading. The upgrade builds on the proven structural separation model of the NGNBN, extending the existing fibre network's capabilities rather than building from scratch. For consumers, 10 Gbps connectivity will enable simultaneous 8K video streaming across multiple devices, near-instantaneous large file transfers, and seamless smart home experiences with dozens of connected devices. For businesses and researchers, it will provide the bandwidth needed to train and deploy AI models, process massive datasets in real time, and collaborate with global teams through ultra-high-definition telepresence. The announcement reaffirmed Singapore's commitment to staying at the cutting edge of global connectivity and its belief that world-class digital infrastructure is a prerequisite for long-term economic competitiveness in an increasingly data-driven world.",
         "source_ids": [5, 6],
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Singapore_Skyline_2019-05-27.jpg/1200px-Singapore_Skyline_2019-05-27.jpg",
+        "image_url": "/images/eras/singapore-skyline-2012.webp",
         "image_alt": "Singapore skyline, representing the Smart Nation vision",
-        "image_credit": "Wikimedia Commons, CC-BY-SA"
+        "image_credit": "Chensiyuan, CC BY-SA 4.0, via Wikimedia Commons"
       }
     ],
     "sources": [
