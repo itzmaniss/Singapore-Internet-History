@@ -1,38 +1,39 @@
-FROM oven/bun:alpine AS base
+FROM oven/bun:slim AS base
+
+WORKDIR /usr/src/app
 
 # --- Dependencies ---
-FROM base AS deps
-WORKDIR /app
+FROM base AS install
 
-COPY package.json bun.lock* package-lock.json* ./
-RUN bun install --frozen-lockfile || bun install
+RUN mkdir -p /temp/dev
+COPY package.json bun.lock* package-lock.json* /temp/dev/
+RUN cd /temp/dev && bun --bun install --frozen-lockfile || cd /temp/dev && bun --bun install
+
+RUN mkdir -p /temp/prod
+COPY package.json bun.lock* package-lock.json* /temp/prod/
+RUN cd /temp/prod && bun --bun install --frozen-lockfile --production || cd /temp/prod && bun --bun install --production
 
 # --- Build ---
-FROM base AS builder
-WORKDIR /app
-
-COPY --from=deps /app/node_modules ./node_modules
+FROM base AS build
+COPY --from=install /temp/dev/node_modules node_modules
 COPY . .
 
-RUN bun run build
+ENV NODE_ENV=production
+RUN bun --bun run build
 
 # --- Production ---
-FROM base AS runner
+FROM oven/bun:distroless AS release
+
+COPY --from=build /usr/src/app/.next/standalone /app
+COPY --from=build /usr/src/app/.next/static /app/.next/static
+COPY --from=build /usr/src/app/public /app/public
+
 WORKDIR /app
 
 ENV NODE_ENV=production
 ENV HOSTNAME=0.0.0.0
 ENV PORT=3000
 
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-USER nextjs
-
 EXPOSE 3000
 
-CMD ["bun", "server.js"]
+ENTRYPOINT ["bun", "--bun", "run", "server.js"]
