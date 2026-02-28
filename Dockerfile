@@ -36,4 +36,7 @@ ENV PORT=3000
 
 EXPOSE 3000
 
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+  CMD ["bun", "-e", "const res = await fetch('http://localhost:3000/health'); process.exit(res.ok ? 0 : 1)"]
+
 ENTRYPOINT ["bun", "--bun", "run", "server.js"]

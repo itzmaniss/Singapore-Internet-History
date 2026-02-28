@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://sg-digital-journey.vercel.app/sitemap.xml
