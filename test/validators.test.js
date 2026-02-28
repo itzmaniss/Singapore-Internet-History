@@ -15,6 +15,7 @@ describe("validateEraContent", () => {
             {
                 year: 2000,
                 event: "Something happened",
+                summary: "A brief summary of what happened.",
                 detail: "Details about what happened.",
                 source_ids: [1],
                 image_url: "/images/test.webp",
@@ -59,6 +60,12 @@ describe("validateEraContent", () => {
             milestones: [{ ...validEra.milestones[0], year: 1800 }],
         };
         expect(validateEraContent(badYear)).toBe(false);
+    });
+
+    it("should reject milestone missing summary", () => {
+        const { summary, ...noSummary } = validEra.milestones[0];
+        const bad = { ...validEra, milestones: [noSummary] };
+        expect(validateEraContent(bad)).toBe(false);
     });
 
     it("should reject milestone missing source_ids", () => {

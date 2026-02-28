@@ -7,6 +7,7 @@
       {
         "year": 1991,
         "event": "NUS establishes Technet",
+        "summary": "NUS set up Singapore's first internet connection — a 64 kbps academic link routed through Hawaii to the US backbone.",
         "detail": "The National University of Singapore established Technet with funding from the National Science and Technology Board (NSTB), giving Singapore its very first internet connection. This initial link operated over a 64 kbps leased line routed through Hawaii to connect with NSFNET, the backbone of the early internet in the United States. Access was strictly limited to the academic and research community — universities, government research labs, and selected institutions used it for email, file transfers, and access to international research databases. Although Technet served only a small number of users, it proved the value of global digital connectivity and planted the seed for Singapore's broader internet ambitions. By exposing local researchers to the collaborative potential of networked computing, Technet helped build the institutional knowledge and political will that would drive commercialisation just a few years later.",
         "source_ids": [1, 2],
         "image_url": "/images/eras/nus-central-library.webp",
@@ -16,6 +17,7 @@
       {
         "year": 1994,
         "event": "SingNet launches — commercial internet begins",
+        "summary": "Singapore Telecom launched SingNet, making commercial dial-up internet available to the general public for the first time.",
         "detail": "Singapore Telecom launched SingNet in 1994, making Singapore one of the earliest countries in Southeast Asia to offer commercial internet access to the general public. Users connected via dial-up modems — typically at speeds of 14.4 kbps to 28.8 kbps — tying up their home telephone lines every time they went online. Despite the slow speeds and the familiar screech of modem handshakes, demand was strong: SingNet attracted tens of thousands of subscribers within its first year. Early adopters used the service primarily for email, basic web browsing on text-heavy sites, and participation in Usenet newsgroups and online forums. SingNet also offered a simpler dial-up email-only service for users who did not need full web access. The launch represented a pivotal moment — the internet was no longer a tool reserved for academics and researchers; it was now a consumer product available to any Singaporean household with a phone line and a modem.",
         "source_ids": [1, 2],
         "image_url": "/images/eras/acoustic-coupler-modem.webp",
@@ -25,6 +27,7 @@
       {
         "year": 1995,
         "event": "Pacific Internet launches",
+        "summary": "A second ISP entered the market, breaking SingNet's monopoly and introducing competition that drove down prices.",
         "detail": "The former Technet infrastructure was acquired and relaunched as Pacific Internet, becoming Singapore's second commercial Internet Service Provider. This was a significant development for consumers, as the introduction of a competing ISP broke SingNet's monopoly and began driving down subscription prices while improving service quality. Pacific Internet positioned itself as a challenger brand, appealing to tech-savvy early adopters and the growing community of small businesses seeking an online presence. The arrival of competition also encouraged both providers to invest in expanding their infrastructure — adding more dial-up points of presence (POPs) across the island, reducing busy signals during peak hours, and gradually increasing connection speeds. For the first time, Singaporean consumers had a genuine choice in how they accessed the internet, setting a precedent for the multi-operator market that would define the country's telecommunications landscape in the years to come.",
         "source_ids": [2],
         "image_url": "/images/eras/dialup-modem.webp",
@@ -34,6 +37,7 @@
       {
         "year": 1996,
         "event": "Cyberway launches & IT2000 masterplan",
+        "summary": "A third ISP launched alongside the IT2000 masterplan — an ambitious blueprint to transform Singapore into an 'intelligent island'.",
         "detail": "A third ISP, Cyberway, entered the Singapore market in 1996, further intensifying competition and broadening consumer choice. More importantly, the same year saw the announcement of the IT2000 masterplan — an ambitious national blueprint that set out the vision of transforming Singapore into an 'intelligent island'. The plan called for the development of a high-speed, nationwide information infrastructure that would interconnect computers in virtually every home, office, and school across the country. Central to this vision was Singapore ONE (One Network for Everyone), a broadband network designed to deliver multimedia services such as video-on-demand, online shopping, and government e-services directly into homes. IT2000 was remarkable for its scope and foresight: at a time when most of the world still viewed the internet as a novelty, Singapore's government was already planning for a future in which ubiquitous digital connectivity would underpin economic competitiveness, public service delivery, and daily life. This top-down, long-range planning approach would become a hallmark of Singapore's digital strategy in the decades to follow.",
         "source_ids": [2, 3],
         "image_url": "/images/eras/singapore-skyline-2012.webp",
@@ -43,6 +47,7 @@
       {
         "year": 2000,
         "event": "Broadband (ADSL) rollout begins",
+        "summary": "ADSL broadband brought always-on connections up to 512 kbps — up to 35x faster than dial-up — transforming how Singaporeans used the internet.",
         "detail": "The turn of the millennium brought a transformative upgrade to Singapore's internet infrastructure with the rollout of Asymmetric Digital Subscriber Line (ADSL) broadband. ADSL delivered downstream speeds of up to 512 kbps — roughly ten to thirty-five times faster than the fastest dial-up modems — and crucially, it provided an 'always-on' connection that did not tie up the household telephone line. This single change fundamentally altered how Singaporeans used the internet: instead of brief, purpose-driven dial-up sessions, users could now stay connected continuously, enabling the rise of streaming media, online gaming, instant messaging, and richer web experiences. The pricing of broadband subscriptions, while initially premium, dropped steadily as adoption grew, making high-speed access increasingly affordable for middle-income households. By the early 2000s, Singapore's broadband penetration rate was among the highest in Asia, a direct result of the infrastructure investments and forward-looking policies established during the Foundation Era. The shift from dial-up to broadband set the stage for the next wave of innovation — mobile and wireless connectivity.",
         "source_ids": [2],
         "image_url": "/images/eras/adsl-connections.webp",

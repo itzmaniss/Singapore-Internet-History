@@ -18,11 +18,12 @@ const validateEraContent = ajv.compile({
             minItems: 1,
             items: {
                 type: "object",
-                required: ["year", "event", "detail", "source_ids", "image_url", "image_alt", "image_credit"],
+                required: ["year", "event", "summary", "detail", "source_ids", "image_url", "image_alt", "image_credit"],
                 additionalProperties: false,
                 properties: {
                     year:         { type: "integer", minimum: 1900, maximum: 2100 },
                     event:        { type: "string", minLength: 1 },
+                    summary:      { type: "string", minLength: 1 },
                     detail:       { type: "string", minLength: 1 },
                     source_ids:   { type: "array", minItems: 1, uniqueItems: true, items: { type: "integer", minimum: 1 } },
                     image_url:    { type: "string", format: "uri-reference" },

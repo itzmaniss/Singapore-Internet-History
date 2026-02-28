@@ -1,6 +1,15 @@
 import { Bebas_Neue, Raleway } from "next/font/google";
 import Link from "next/link";
 
+export const metadata = {
+    title: "Singapore's Digital Journey",
+    description: "Explore Singapore's transformation from a single 64 kbps link in 1991 to one of the world's most connected nations.",
+    openGraph: {
+        title: "Singapore's Digital Journey",
+        description: "Explore Singapore's transformation from a single 64 kbps link in 1991 to one of the world's most connected nations.",
+    },
+};
+
 const bebas = Bebas_Neue({
     weight: "400",
     subsets: ["latin"]

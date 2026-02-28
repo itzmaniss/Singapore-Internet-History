@@ -7,6 +7,16 @@ import { getEraData } from "@/data/eras/index";
 import sgData from "@/data/internet_usage_in_sg.json";
 import globalData from "@/data/internet_usage_by_country.json";
 import { validateSingaporeInternetUsage, validateGlobalInternetUsage } from "@/utils";
+import FadeIn from "@/components/FadeIn";
+
+export const metadata = {
+    title: "Overview",
+    description: "Charts and data tracking Singapore's internet growth from 2000 to 2024, compared against global adoption rates.",
+    openGraph: {
+        title: "The Big Picture — Singapore Internet History",
+        description: "Charts and data tracking Singapore's internet growth from 2000 to 2024, compared against global adoption rates.",
+    },
+};
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
@@ -37,60 +47,67 @@ export default async function OverviewPage() {
             <NavBar />
             <div className={`${raleway.className} bg-page-bg min-w-full`}>
                 {/* Hero */}
-                <div className="max-w-4xl mx-auto px-8 py-16 text-center">
-                    <h1
-                        className={`${bebas.className} text-4xl md:text-6xl font-bold text-text-main`}
-                    >
-                        The Big Picture
-                    </h1>
-                    <p className="text-text-secondary text-lg mt-4 leading-relaxed max-w-2xl mx-auto">
-                        From a single 64 kbps academic link in 1991 to nationwide 5G and
-                        plans for 10 Gbps broadband, Singapore&apos;s internet story is one
-                        of relentless ambition. The charts below trace that journey through
-                        data — and the era cards invite you to explore each chapter in detail.
-                    </p>
-                </div>
+                <FadeIn>
+                    <div className="max-w-4xl mx-auto px-8 py-16 text-center">
+                        <h1
+                            className={`${bebas.className} text-4xl md:text-6xl font-bold text-text-heading`}
+                        >
+                            The Big Picture
+                        </h1>
+                        <p className="text-text-secondary text-lg mt-4 leading-relaxed max-w-2xl mx-auto">
+                            From a single 64 kbps academic link in 1991 to nationwide 5G and
+                            plans for 10 Gbps broadband, Singapore&apos;s internet story is one
+                            of relentless ambition. The charts below trace that journey through
+                            data — and the era cards invite you to explore each chapter in detail.
+                        </p>
+                    </div>
+                </FadeIn>
 
                 {/* Singapore Chart */}
-                <section className="max-w-5xl mx-auto px-8 pb-16">
-                    <h2
-                        className={`${bebas.className} text-2xl md:text-4xl text-text-main mb-2`}
-                    >
-                        Singapore&apos;s Internet Growth
-                    </h2>
-                    <p className="text-text-secondary text-sm mb-6">
-                        Individual internet penetration rate, 2000 – 2024. Source: Data.gov.sg
-                    </p>
-                    <div className="bg-teal-dark/50 rounded-xl p-4 md:p-6 border border-cyan-muted/10">
-                        <SingaporeChart data={sgData.data} />
-                    </div>
-                </section>
+                <FadeIn>
+                    <section className="max-w-5xl mx-auto px-8 pb-16">
+                        <h2
+                            className={`${bebas.className} text-2xl md:text-4xl text-text-heading mb-2`}
+                        >
+                            Singapore&apos;s Internet Growth
+                        </h2>
+                        <p className="text-text-secondary text-sm mb-6">
+                            Individual internet penetration rate, 2000 – 2024. Source: Data.gov.sg
+                        </p>
+                        <div className="bg-teal-dark/50 rounded-xl p-4 md:p-6 border border-cyan-muted/10">
+                            <SingaporeChart data={sgData.data} />
+                        </div>
+                    </section>
+                </FadeIn>
 
                 {/* Global Chart */}
-                <section className="max-w-5xl mx-auto px-8 pb-16">
-                    <h2
-                        className={`${bebas.className} text-2xl md:text-4xl text-text-main mb-2`}
-                    >
-                        Singapore vs. The World
-                    </h2>
-                    <p className="text-text-secondary text-sm mb-6">
-                        Internet users as a percentage of population, 1990 – 2025. Source: World Bank
-                    </p>
-                    <div className="bg-teal-dark/50 rounded-xl p-4 md:p-6 border border-cyan-muted/10">
-                        <GlobalChart
-                            years={globalData.years}
-                            countries={globalData.countries}
-                        />
-                    </div>
-                </section>
+                <FadeIn>
+                    <section className="max-w-5xl mx-auto px-8 pb-16">
+                        <h2
+                            className={`${bebas.className} text-2xl md:text-4xl text-text-heading mb-2`}
+                        >
+                            Singapore vs. The World
+                        </h2>
+                        <p className="text-text-secondary text-sm mb-6">
+                            Internet users as a percentage of population, 1990 – 2025. Source: World Bank
+                        </p>
+                        <div className="bg-teal-dark/50 rounded-xl p-4 md:p-6 border border-cyan-muted/10">
+                            <GlobalChart
+                                years={globalData.years}
+                                countries={globalData.countries}
+                            />
+                        </div>
+                    </section>
+                </FadeIn>
 
                 {/* Era Cards */}
-                <section className="max-w-5xl mx-auto px-8 pb-20">
-                    <h2
-                        className={`${bebas.className} text-2xl md:text-4xl text-text-main mb-8 text-center`}
-                    >
-                        Explore the Eras
-                    </h2>
+                <FadeIn>
+                    <section className="max-w-5xl mx-auto px-8 pb-20">
+                        <h2
+                            className={`${bebas.className} text-2xl md:text-4xl text-text-heading mb-8 text-center`}
+                        >
+                            Explore the Eras
+                        </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {eras.map((era) => (
                             <Link
@@ -115,7 +132,8 @@ export default async function OverviewPage() {
                             </Link>
                         ))}
                     </div>
-                </section>
+                    </section>
+                </FadeIn>
             </div>
         </>
     );
