@@ -1,5 +1,6 @@
 import "./globals.css";
 import Footer from "@/components/Footer"
+import BackToTop from "@/components/BackToTop"
 
 export const metadata = {
     title: {
@@ -31,6 +32,7 @@ export default function RootLayout({ children }){
                     {children}
                 </main>
                 <Footer />
+                <BackToTop />
             </body>
         </html>
     );

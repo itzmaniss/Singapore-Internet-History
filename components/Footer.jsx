@@ -8,7 +8,7 @@ export default function Footer() {
           
           {/* Column 1: Navigation */}
           <div>
-            <h3 className="text-cyan-bright font-bold mb-4 text-lg">Explore Eras</h3>
+            <p className="text-cyan-bright font-bold mb-4 text-lg">Explore Eras</p>
             <ul className="space-y-2 text-text-secondary">
               <li>
                 <Link 
@@ -55,7 +55,7 @@ export default function Footer() {
           
           {/* Column 2: Data Sources */}
           <div>
-            <h3 className="text-cyan-bright font-bold mb-4 text-lg">Data Sources</h3>
+            <p className="text-cyan-bright font-bold mb-4 text-lg">Data Sources</p>
             <ul className="space-y-2 text-text-secondary text-sm">
               <li>
                 <a 
@@ -92,7 +92,7 @@ export default function Footer() {
           
           {/* Column 3: About */}
           <div>
-            <h3 className="text-cyan-bright font-bold mb-4 text-lg">About This Project</h3>
+            <p className="text-cyan-bright font-bold mb-4 text-lg">About This Project</p>
             <p className="text-text-secondary text-sm mb-4 leading-relaxed">
               An interactive exploration of Singapore&apos;s remarkable digital transformation 
               from its humble beginnings in 1991 to becoming one of the world&apos;s most 

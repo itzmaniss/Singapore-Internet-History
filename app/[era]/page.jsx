@@ -66,10 +66,8 @@ export default async function EraPage({ params }) {
                 </FadeIn>
                 <FadeIn>
                     <div className="flex justify-center py-16">
-                        <Link href={nextEra ? `/${nextEra}` : "/overview"}>
-                            <button className="bg-white text-black text-base rounded-full px-8 py-3 font-semibold hover:bg-cyan-bright hover:text-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                        <Link href={nextEra ? `/${nextEra}` : "/overview"} className="inline-block bg-white text-black text-base rounded-full px-8 py-3 font-semibold hover:bg-cyan-bright hover:text-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg hover:shadow-2xl">
                                 {nextEra ? `Move on to ${nextEraData.title}` : "Back to Overview"}
-                            </button>
                         </Link>
                     </div>
                 </FadeIn>

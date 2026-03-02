@@ -21,7 +21,7 @@ const raleway = Raleway({
 
 export default function Home() {
     return (
-        <main className="bg-[url('/images/mbs_night.jpg')] bg-cover bg-center min-h-screen">
+        <div className="bg-[url('/images/mbs_night.jpg')] bg-cover bg-center min-h-screen">
             <div className="bg-black/50 min-h-screen flex flex-col items-center justify-start text-white px-4 pt-32">
                 
                 <h1 
@@ -41,26 +41,24 @@ export default function Home() {
                 </p>
                 
                 <div className="mt-6 md:mt-8">
-                    <Link href="/overview">
-                        <button className={`${raleway.className} 
-                            bg-white text-black 
-                            text-lg sm:text-xl 
-                            rounded-full 
-                            w-40 sm:w-48 
-                            py-3 sm:py-4 
-                            font-semibold 
-                            hover:bg-cyan-bright hover:text-white 
+                    <Link href="/overview" className={`${raleway.className}
+                            inline-block bg-white text-black
+                            text-lg sm:text-xl
+                            rounded-full
+                            w-40 sm:w-48
+                            py-3 sm:py-4
+                            font-semibold text-center
+                            hover:bg-cyan-bright hover:text-white
                             hover:scale-105 active:scale-95
-                            transition-all duration-300 
+                            transition-all duration-300
                             shadow-lg hover:shadow-2xl
                             min-h-12
                         `}>
                             Begin Journey
-                        </button>
                     </Link>
                 </div>
                 
             </div>
-        </main>
+        </div>
     );
 }
