@@ -2,6 +2,7 @@ import "./globals.css";
 import Footer from "@/components/Footer"
 import BackToTop from "@/components/BackToTop"
 
+// site-wide SEO metadata
 export const metadata = {
     title: {
         default: "Singapore Internet History",
@@ -24,6 +25,7 @@ export const metadata = {
     },
 }
 
+// wraps every page with a shared footer and back-to-top button
 export default function RootLayout({ children }){
     return (
         <html lang="en">

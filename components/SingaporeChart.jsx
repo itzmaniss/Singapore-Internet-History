@@ -14,6 +14,7 @@ import {
 } from "chart.js";
 import annotationPlugin from "chartjs-plugin-annotation";
 
+// register chart.js modules needed for line charts + annotations
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -26,6 +27,7 @@ ChartJS.register(
     annotationPlugin
 );
 
+// shaded background regions marking each historical era on the chart
 const ERA_BANDS = {
     foundation: {
         type: "box",
@@ -77,6 +79,7 @@ const ERA_BANDS = {
     },
 };
 
+// line chart showing SG internet penetration 2000–2024
 export default function SingaporeChart({ data }) {
     const chartData = {
         labels: data.map((d) => String(d.year)),

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 
+// floating button that appears after scrolling down 300px
 export default function BackToTop() {
     const [visible, setVisible] = useState(false);
 

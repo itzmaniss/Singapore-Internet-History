@@ -2,6 +2,7 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import FadeIn from "@/components/FadeIn";
 
+// custom 404 page
 export default function NotFound() {
     return (
         <>

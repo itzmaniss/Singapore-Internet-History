@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// 3-column footer — nav links, data sources, about section
 export default function Footer() {
   return (
     <footer className="bg-teal-medium py-10 border-t border-cyan-muted/20 min-w-full">

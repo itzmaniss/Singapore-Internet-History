@@ -5,8 +5,10 @@ import NavBar from "@/components/NavBar";
 import MilestoneCard from "@/components/MilestoneCard";
 import FadeIn from "@/components/FadeIn";
 
+// defines the order eras appear in and controls "next era" navigation
 const ERA_ORDER = ["foundation", "wireless", "smart-nation"];
 
+// dynamically set page title and OG tags based on which era is loaded
 export async function generateMetadata({ params }) {
     const { era } = await params;
     if (!ERA_ORDER.includes(era)) return {};
@@ -21,6 +23,7 @@ export async function generateMetadata({ params }) {
     };
 }
 
+// dynamic route — renders /foundation, /wireless, or /smart-nation
 export default async function EraPage({ params }) {
     const { era } = await params;
     if (!ERA_ORDER.includes(era)) {

@@ -2,8 +2,9 @@ import Ajv from "ajv";
 
 const ajv = new Ajv({ allErrors: true });
 
+// schema for internet_usage_in_sg.json
 const schema = {
-    type: "object", 
+    type: "object",
     properties: {
         title: {type: "string"},
         subtitle: {type: "string"},

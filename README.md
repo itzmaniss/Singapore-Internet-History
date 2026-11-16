@@ -51,23 +51,31 @@ test/
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 18+ or Bun
-
-### Install dependencies
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run development server
+### 2. Start the server
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+### 3. Open in browser
+
+Go to <http://localhost:3000>
+
+### Available Pages
+
+| Page | URL |
+| ---- | --- |
+| Landing | `/` |
+| Overview (charts) | `/overview` |
+| Foundation Era | `/foundation` |
+| Wireless Era | `/wireless` |
+| Smart Nation Era | `/smart-nation` |
 
 ### Run tests
 
@@ -75,14 +83,13 @@ Open [http://localhost:3000](http://localhost:3000).
 npm test
 ```
 
-### Build for production
+### Production build (optional)
 
 ```bash
-npm run build
-npm start
+npm run build && npm start
 ```
 
-### Docker
+### Docker (optional)
 
 ```bash
 docker build -t sg-digital-journey .

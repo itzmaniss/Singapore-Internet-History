@@ -2,6 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 
+// wrapper that fades children in when they scroll into view
 export default function FadeIn({ children, className = "" }) {
     const ref = useRef(null);
     const [isVisible, setIsVisible] = useState(false);

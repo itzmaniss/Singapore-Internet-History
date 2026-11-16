@@ -21,13 +21,16 @@ export const metadata = {
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"] });
 const raleway = Raleway({ subsets: ["latin"] });
 
+// config for the 3 era cards at the bottom of the page
 const ERA_CARDS = [
     { slug: "foundation", accent: "border-cyan-bright/40" },
     { slug: "wireless", accent: "border-cyan-electric/40" },
     { slug: "smart-nation", accent: "border-gold-warm/40" },
 ];
 
+// server component — loads data at build time and validates with Ajv
 export default async function OverviewPage() {
+    // validate JSON data before rendering
     const sgValid = validateSingaporeInternetUsage(sgData);
     const globalValid = validateGlobalInternetUsage(globalData);
 
@@ -35,6 +38,7 @@ export default async function OverviewPage() {
         console.error("Data validation failed");
     }
 
+    // load all era JSON files in parallel
     const eras = await Promise.all(
         ERA_CARDS.map(async (card) => {
             const data = await getEraData(card.slug);

@@ -10,6 +10,7 @@ export const metadata = {
     },
 };
 
+// fonts loaded via next/font for performance
 const bebas = Bebas_Neue({
     weight: "400",
     subsets: ["latin"]
@@ -19,6 +20,7 @@ const raleway = Raleway({
     subsets: ["latin"]
 })
 
+// landing page — full-screen hero with MBS background
 export default function Home() {
     return (
         <div className="bg-[url('/images/mbs_night.jpg')] bg-cover bg-center min-h-screen">

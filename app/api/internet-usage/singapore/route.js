@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import singaporeInternetUsageData from "@/data/internet_usage_in_sg.json";
 import { validateSingaporeInternetUsage } from "@/utils/index";
 
+// GET /api/internet-usage/singapore — returns SG data after validation
 export async function GET() {
     const validData = validateSingaporeInternetUsage(singaporeInternetUsageData);
     if (validData) {

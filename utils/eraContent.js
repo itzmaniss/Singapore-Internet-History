@@ -4,6 +4,7 @@ import addFormats from "ajv-formats";
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
 
+// schema for era JSON files (foundation.json, wireless.json, etc.)
 const validateEraContent = ajv.compile({
     type: "object",
     required: ["title", "period", "slug", "intro", "milestones", "sources"],

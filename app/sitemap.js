@@ -1,5 +1,6 @@
 const BASE_URL = process.env.SITE_URL || "localhost:3000";
 
+// generates /sitemap.xml listing all pages for SEO
 export default function sitemap() {
     return [
         { url: `${BASE_URL}/`, lastModified: new Date() },

@@ -1,5 +1,6 @@
 import { validateEraContent } from "@/utils";
 
+// dynamically import and validate an era's JSON file by slug
 export async function getEraData(era) {
     const eraFile = {
         "foundation": () => import("./foundation.json"),

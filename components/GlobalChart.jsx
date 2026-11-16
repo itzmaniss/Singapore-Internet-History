@@ -13,6 +13,7 @@ import {
 } from "chart.js";
 import annotationPlugin from "chartjs-plugin-annotation";
 
+// register chart.js modules needed for line charts + annotations
 ChartJS.register(
     CategoryScale,
     LinearScale,
@@ -24,6 +25,7 @@ ChartJS.register(
     annotationPlugin
 );
 
+// shaded background regions marking each historical era on the chart
 const ERA_BANDS = {
     foundation: {
         type: "box",
@@ -75,7 +77,9 @@ const ERA_BANDS = {
     },
 };
 
+// multi-country comparison chart — SG line is highlighted thicker
 export default function GlobalChart({ years, countries }) {
+    // sort countries by latest value so legend order makes sense
     const sorted = [...countries].sort((a, b) => {
         const lastA = a.data[a.data.length - 1] ?? 0;
         const lastB = b.data[b.data.length - 1] ?? 0;

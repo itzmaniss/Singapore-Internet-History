@@ -3,9 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 
+// alternating image+text card with expandable detail section
 export default function MilestoneCard({ milestone, index }) {
     const [expanded, setExpanded] = useState(false);
-    const isOdd = (index + 1) % 2 === 1;
+    const isOdd = (index + 1) % 2 === 1; // flip layout every other card
 
     return (
         <div

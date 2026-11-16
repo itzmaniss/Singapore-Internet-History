@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// all nav links rendered in both desktop and mobile menus
 const NAV_LINKS = [
     { href: "/overview", label: "Overview" },
     { href: "/foundation", label: "Foundation" },
@@ -11,11 +12,13 @@ const NAV_LINKS = [
     { href: "/smart-nation", label: "Smart Nation" },
 ];
 
+// sticky navbar — adds blur + shadow on scroll, has a hamburger menu on mobile
 export default function NavBar() {
     const pathname = usePathname();
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
+    // track scroll position to toggle navbar style
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 0);
         window.addEventListener("scroll", handleScroll, { passive: true });
